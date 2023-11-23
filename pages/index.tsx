@@ -1,5 +1,7 @@
-import DeployGithubPages from "./DeployGithubPages";
+import Link from "next/link";
 
-const IndexPage = () => <DeployGithubPages />;
+const IndexPage = () => {
+  return <Link href="/DeployGithubPages">DeployGithubPages</Link>;
+};
 
 export default IndexPage;
