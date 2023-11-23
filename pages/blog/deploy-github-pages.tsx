@@ -1,5 +1,4 @@
-import React from "react";
-import ReactMarkdown from "react-markdown";
+import { Blog } from "@/components/blog";
 
 const markdownString = `
 # GitHub PagesにNext.jsサイトをデプロイする手順(2023/11/23)
@@ -71,12 +70,7 @@ module.exports = nextConfig
 `;
 
 const DeployGithubPages = () => {
-  return (
-    <html lang="ja">
-      <title>GitHub PagesにNext.jsサイトをデプロイする手順</title>
-      <ReactMarkdown>{markdownString}</ReactMarkdown>
-    </html>
-  );
+  return <Blog content={markdownString} />;
 };
 
 export default DeployGithubPages;
