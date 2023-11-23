@@ -68,15 +68,14 @@ module.exports = nextConfig
 \`\`\`
 
 あとはコミットしてプッシュすれば、GitHub Actionsが走って、GitHub Pagesにデプロイされる。
-
-
 `;
 
 const DeployGithubPages = () => {
   return (
-    <div>
+    <html lang="ja">
+      <title>GitHub PagesにNext.jsサイトをデプロイする手順</title>
       <ReactMarkdown>{markdownString}</ReactMarkdown>
-    </div>
+    </html>
   );
 };
 
